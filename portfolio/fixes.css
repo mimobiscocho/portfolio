@@ -1,0 +1,320 @@
+/* ================================================================
+   PORTFOLIO — styles extraits de index.html
+   ================================================================ */
+
+/* ── Taille du texte ──────────────────────────────────────────────
+   Changer --text-scale pour agrandir/réduire tout le texte du site.
+   1   = taille normale
+   1.1 = +10 %   1.2 = +20 %   0.9 = −10 %
+   ────────────────────────────────────────────────────────────── */
+:root {
+  --text-scale: 1.50;
+}
+html {
+  font-size: calc(16px * var(--text-scale));
+}
+
+/* Fix: FORMATION window – "2k49" starts with a digit, can't use .2k49 */
+[class~="2k49"] { left: 20px; top: 60px; width: 320px; height: 280px; }
+@media (min-width: 768px) { [class~="2k49"] { width: 420px; height: 300px; } }
+
+/* Fix: STAGES window */
+.finder.blondafolder { left: 35px; top: 65px; width: 320px; height: 300px; }
+@media (min-width: 768px) { .finder.blondafolder { width: 400px; height: 320px; } }
+
+/* Fix: PROJETS window body overflow */
+.finder.fdl .body { overflow-y: auto !important; }
+
+/* Fix: veille.txt button */
+#readme { position: absolute; right: 20px; top: 260px; }
+
+/* Police principale */
+body, button, input {
+  font-family: 'Share Tech Mono', monospace !important;
+}
+
+/* Fix: folder icon – img/folder.png manquant */
+.file.folder:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='29'%3E%3Crect x='1' y='7' width='34' height='20' fill='white' stroke='black' stroke-width='1.5'/%3E%3Cpolygon points='1,7 1,4 13,4 15,7' fill='white' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-size: 36px 29px !important;
+  background-position: 0 0 !important;
+}
+.file.folder:active:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='29'%3E%3Crect x='1' y='7' width='34' height='20' fill='black' stroke='black' stroke-width='1.5'/%3E%3Cpolygon points='1,7 1,4 13,4 15,7' fill='black' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-size: 36px 29px !important;
+}
+
+/* Fix: text file icon – img/text.png manquant */
+.file.text:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='36'%3E%3Cpolygon points='1,1 19,1 27,9 27,35 1,35' fill='white' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpolyline points='19,1 19,9 27,9' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cline x1='5' y1='14' x2='23' y2='14' stroke='black' stroke-width='1'/%3E%3Cline x1='5' y1='18' x2='23' y2='18' stroke='black' stroke-width='1'/%3E%3Cline x1='5' y1='22' x2='23' y2='22' stroke='black' stroke-width='1'/%3E%3Cline x1='5' y1='26' x2='17' y2='26' stroke='black' stroke-width='1'/%3E%3C/svg%3E") !important;
+  background-size: 28px 36px !important;
+  background-position: 0 0 !important;
+}
+.file.text.active:before, .file.text.playing:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='36'%3E%3Cpolygon points='1,1 19,1 27,9 27,35 1,35' fill='black' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpolyline points='19,1 19,9 27,9' fill='none' stroke='white' stroke-width='1.5'/%3E%3Cline x1='5' y1='14' x2='23' y2='14' stroke='white' stroke-width='1'/%3E%3Cline x1='5' y1='18' x2='23' y2='18' stroke='white' stroke-width='1'/%3E%3Cline x1='5' y1='22' x2='23' y2='22' stroke='white' stroke-width='1'/%3E%3Cline x1='5' y1='26' x2='17' y2='26' stroke='white' stroke-width='1'/%3E%3C/svg%3E") !important;
+  background-size: 28px 36px !important;
+}
+
+/* Fix: window header texture */
+.finder .header:before {
+  background: repeating-linear-gradient(
+    to bottom,
+    #fff 0px, #fff 1px,
+    #d0d0d0 1px, #d0d0d0 2px
+  ) !important;
+}
+
+/* VT323 pour le bios */
+.bios {
+  font-family: 'VT323', monospace !important;
+  font-size: calc(16px * var(--text-scale)) !important;
+  line-height: 1.5 !important;
+  overflow-y: auto !important;
+  letter-spacing: 0.03em !important;
+}
+.bios p { margin: 0 !important; }
+
+/* Polices barre de menu et fenêtres */
+.navbar button, .navbar .item > span, .finder .header .title {
+  font-family: 'Share Tech Mono', monospace !important;
+}
+.file span {
+  font-family: 'VT323', monospace !important;
+  font-size: calc(14px * var(--text-scale)) !important;
+}
+.finder .body, .finder .body * {
+  font-family: 'VT323', monospace !important;
+  font-size: calc(15px * var(--text-scale)) !important;
+}
+
+/* Screen pleine page */
+.screen {
+  background-color: #9b9696;
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+/* Positions des icônes — deux colonnes à gauche */
+.folder1  { left:  22px !important; top:  40px !important; }
+.folder2  { left: 145px !important; top:  40px !important; }
+.folder3  { left:  22px !important; top: 140px !important; }
+.earthtxt { left: 145px !important; top: 140px !important; }
+.lizard   { left:  22px !important; top: 240px !important; }
+.folder4  { left: 145px !important; top: 240px !important; }
+#readme    { position: absolute !important; left:  22px; top: 340px; }
+#docs-icon { position: absolute !important; left: 145px; top: 340px; }
+#lisezmoi  { position: absolute !important; left:  22px; top: 440px; }
+.hd-icon  { position: absolute !important; right: 22px; top: 40px; }
+
+/* Icône Corbeille */
+.file.trash { padding-top: 40px !important; }
+.file.trash:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='36'%3E%3Cpath d='M11 3 Q14 1 17 3' fill='none' stroke='black' stroke-width='1.5'/%3E%3Crect x='3' y='5' width='22' height='4' fill='white' stroke='black' stroke-width='1.5' rx='1'/%3E%3Cpath d='M6 9 L7.5 33 L20.5 33 L22 9 Z' fill='white' stroke='black' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cline x1='11' y1='13' x2='11' y2='29' stroke='black' stroke-width='1'/%3E%3Cline x1='14' y1='13' x2='14' y2='29' stroke='black' stroke-width='1'/%3E%3Cline x1='17' y1='13' x2='17' y2='29' stroke='black' stroke-width='1'/%3E%3C/svg%3E") !important;
+  background-size: 28px 36px !important;
+  background-position: 0 0 !important;
+  content: '' !important;
+  display: block !important;
+  top: 0 !important;
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  height: 36px !important;
+  width: 28px !important;
+}
+
+/* Logo bouton Apple */
+.logo:before {
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.42c1.32.07 2.23.73 3 .78 1.14-.23 2.23-.9 3.44-.77 1.47.17 2.6.72 3.28 1.86-3.1 1.85-2.33 5.64.43 6.95-.57 1.47-1.28 2.92-2.15 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z'/%3E%3C/svg%3E") 50% 50% / 14px 14px no-repeat !important;
+}
+.logo.active:before, .navbar .item .logo:active:before {
+  background: #000 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.42c1.32.07 2.23.73 3 .78 1.14-.23 2.23-.9 3.44-.77 1.47.17 2.6.72 3.28 1.86-3.1 1.85-2.33 5.64.43 6.95-.57 1.47-1.28 2.92-2.15 4.04zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z'/%3E%3C/svg%3E") 50% 50% / 14px 14px no-repeat !important;
+}
+
+
+/* CRT flicker */
+@keyframes flicker {
+  0%   { opacity: 0.02; }
+  30%  { opacity: 0.035; }
+  50%  { opacity: 0.05; }
+  70%  { opacity: 0.03; }
+  100% { opacity: 0.02; }
+}
+.screen::after {
+  animation: flicker 8s ease-in-out infinite !important;
+}
+
+/* Bios colors */
+.bios-ok    { color: #00ff41; }
+.bios-done  { color: #00cfff; }
+.bios-en    { color: #00cfff; }
+.bios-muted { color: #666; }
+.bios-title { color: #fff; letter-spacing: 0.06em; }
+.bios-info  { color: #ffe44d; }
+.bios-cursor {
+  display: inline-block;
+  width: 7px;
+  height: 0.85em;
+  background: #ccc;
+  vertical-align: text-bottom;
+  margin-left: 1px;
+  animation: cursorBlink 0.7s step-end infinite;
+}
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ================================================================
+   Listing de fichiers dans une fenêtre finder
+   ================================================================ */
+.finder-filelist {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-content: flex-start;
+}
+
+/* Réinitialise le positionnement absolu des icônes bureau */
+.finder-filelist .file {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  z-index: auto !important;
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.finder-loading {
+  padding: 1rem;
+  opacity: 0.45;
+}
+
+/* ================================================================
+   Positionnement des fenêtres finder
+   ================================================================ */
+.finder.docs-window   { left: 80px;  top: 55px; width: 660px; height: 340px; }
+.finder.skills-window { left: 100px; top: 60px; width: 380px; height: 360px; }
+.finder.docs-window .body { overflow-x: auto; overflow-y: auto; }
+
+/* ================================================================
+   Séparateurs réutilisables
+   ================================================================ */
+.w-hr    { margin: 1rem 0;   border: none; border-top: 1px solid rgba(0,0,0,0.15); }
+.w-hr-sm { margin: 0.8rem 0; border: none; border-top: 1px solid rgba(0,0,0,0.12); }
+
+/* ================================================================
+   FORMATION
+   ================================================================ */
+.formation-body       { padding: 1rem; max-width: 500px; line-height: 1.6; }
+.formation-body h2    { margin-bottom: 0.5rem; }
+.formation-sub        { margin-bottom: 1rem; opacity: 0.6; }
+.formation-field      { margin-bottom: 0.4rem; }
+.formation-field-gap  { margin-bottom: 1rem; }
+.formation-item       { margin-bottom: 0.5rem; }
+.formation-item-gap   { margin-bottom: 1rem; }
+.formation-prev-h     { margin-bottom: 0.5rem; opacity: 0.7; }
+
+/* ================================================================
+   ÉPREUVES
+   ================================================================ */
+.epreuves-body { padding: 1rem; width: 100%; max-width: 600px; }
+
+.ep-table                { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.ep-table thead tr       { border-bottom: 1px solid rgba(0,0,0,0.2); opacity: 0.6; }
+.ep-table th             { text-align: left; padding: 0.5rem; font-weight: normal; }
+.ep-table th.r           { text-align: right; }
+.ep-table td             { padding: 0.5rem; }
+.ep-table td.r           { text-align: right; opacity: 0.7; }
+.ep-table td.rb          { text-align: right; font-weight: bold; }
+.ep-table td.b           { font-weight: bold; }
+.ep-table .sep           { border-bottom: 1px solid rgba(0,0,0,0.1); }
+.ep-table .hi            { background: rgba(0,0,0,0.04); }
+
+/* ================================================================
+   EXPÉRIENCE PRO — cards
+   ================================================================ */
+.stages-body         { padding: 1rem; width: 100%; max-width: 420px; }
+.card                { border: 1px solid rgba(0,0,0,0.15); border-radius: 4px; padding: 0.75rem; margin-bottom: 0.6rem; }
+.card:last-child     { margin-bottom: 0; }
+.card h3             { margin-bottom: 0.2rem; }
+.card-sub            { opacity: 0.65; margin-bottom: 0.2rem; }
+.card-date           { opacity: 0.4; }
+
+/* ================================================================
+   PROJETS
+   ================================================================ */
+.projets-body        { padding: 1rem; width: 100%; max-width: 550px; }
+.proj-card           { border: 1px solid rgba(0,0,0,0.15); border-radius: 4px; padding: 1rem; margin-bottom: 0.75rem; }
+.proj-card:last-child { margin-bottom: 0; }
+.proj-head           { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; }
+.proj-badge          { opacity: 0.5; border: 1px solid rgba(0,0,0,0.25); padding: 2px 6px; border-radius: 3px; white-space: nowrap; margin-left: 0.5rem; }
+.proj-desc           { opacity: 0.7; margin-bottom: 0.75rem; line-height: 1.5; }
+.proj-link           { color: inherit; opacity: 0.6; text-decoration: underline; }
+.proj-na             { opacity: 0.35; }
+
+/* ================================================================
+   VEILLE
+   ================================================================ */
+.veille-body         { padding: 1rem; max-width: 540px; line-height: 1.7; }
+.veille-body h2      { margin-bottom: 0.25rem; }
+.veille-meta         { opacity: 0.5; margin-bottom: 1rem; }
+.veille-intro        { margin-bottom: 0.75rem; opacity: 0.85; }
+.veille-item         { margin-bottom: 0.5rem; }
+.veille-conclusion   { opacity: 0.7; line-height: 1.6; }
+.veille-sources      { margin-top: 1rem; border-top: 1px solid rgba(0,0,0,0.12); padding-top: 0.75rem; }
+.veille-sources p    { opacity: 0.4; }
+
+/* ================================================================
+   COMPÉTENCES
+   ================================================================ */
+.skills-body         { padding: 1rem; font-size: 15px; line-height: 1.8; }
+.skill-group         { margin-bottom: 0.75rem; }
+.skill-label         { opacity: 0.55; margin-bottom: 0.3rem; }
+.skills-divider      { border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 0.75rem 0; }
+
+/* ================================================================
+   CONTACT
+   ================================================================ */
+.contact-body        { padding: 1rem; line-height: 2; font-size: 0.88rem; }
+.contact-name        { font-weight: bold; font-size: 1rem; letter-spacing: 0.08em; margin-bottom: 0.1rem; }
+.contact-meta        { opacity: 0.55; font-size: 0.8rem; margin-bottom: 1.2rem; }
+.contact-link        { color: inherit; }
+.contact-note        { opacity: 0.5; font-size: 0.78rem; }
+
+/* ================================================================
+   LISEZMOI
+   ================================================================ */
+
+/* Fond blanc explicite pour toutes les fenêtres */
+.finder .body        { background-color: #fff; }
+
+.intro-body-wrap     { padding: 0.75rem; line-height: 1.7; }
+.intro-title         { font-weight: bold; letter-spacing: 0.05em; margin-bottom: 0.3rem; color: #000; }
+.intro-sub           { color: #555; margin-bottom: 0.9rem; }
+.intro-text          { margin-bottom: 0.7rem; color: #222; }
+.intro-list-title    { margin-bottom: 0.3rem; color: #000; }
+.intro-list-item     { color: #333; margin-bottom: 0.2rem; }
+
+/* ================================================================
+   TABLEAU DE SYNTHÈSE
+   ================================================================ */
+.docs-body-wrap             { padding: 0.75rem; min-width: 600px; }
+.synth-table                { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+.synth-table thead tr       { border-bottom: 2px solid rgba(0,0,0,0.2); opacity: 0.7; }
+.synth-table th             { text-align: left; padding: 0.4rem 0.6rem; font-weight: bold; white-space: nowrap; }
+.synth-table th.wide        { white-space: normal; }
+.synth-table th.c           { text-align: center; }
+.synth-table td             { padding: 0.4rem 0.6rem; }
+.synth-table td.num         { opacity: 0.5; }
+.synth-table td.nw          { white-space: nowrap; }
+.synth-table td.dt          { white-space: nowrap; opacity: 0.6; }
+.synth-table td.c           { text-align: center; }
+.synth-table td.na          { text-align: center; opacity: 0.25; }
+.synth-table .sep           { border-bottom: 1px solid rgba(0,0,0,0.08); }
+.synth-table .alt           { background: rgba(0,0,0,0.025); }

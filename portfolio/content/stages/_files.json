@@ -1,0 +1,7 @@
+[
+  { "name": "ICDC — Alternance",             "ext": "txt", "file": "icdc.html" },
+  { "name": "Caisse des Dépôts — DSI",       "ext": "txt", "file": "caisse-dsi.html" },
+  { "name": "Caisse des Dépôts — Java",      "ext": "txt", "file": "caisse-java.html" },
+  { "name": "AGR Assurances",                "ext": "txt", "file": "agr.html" },
+  { "name": "CL Systems",                    "ext": "txt", "file": "cl-systems.html" }
+]

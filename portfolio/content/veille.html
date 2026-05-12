@@ -1,0 +1,23 @@
+<style>
+  .veille { font-family: Chicago, sans-serif; }
+  .veille h2 { font-size: 0.95rem; font-weight: bold; margin-bottom: 3px; }
+  .veille .meta { font-size: 0.72rem; opacity: 0.5; margin-bottom: 10px; }
+  .veille .intro { font-size: 0.82rem; line-height: 1.55; margin-bottom: 10px; }
+  .veille hr { border: none; border-top: 1px solid #000; margin-bottom: 10px; }
+  .veille .item { font-size: 0.82rem; line-height: 1.5; margin-bottom: 8px; }
+  .veille .item strong { font-weight: bold; }
+  .veille .conclusion { font-size: 0.8rem; line-height: 1.5; opacity: 0.7; border-top: 1px solid #ccc; padding-top: 8px; margin-top: 4px; margin-bottom: 8px; }
+  .veille .sources { font-size: 0.72rem; opacity: 0.45; }
+</style>
+<div class="veille">
+  <h2>Sécurité des hyperviseurs de virtualisation</h2>
+  <p class="meta">Veille Technologique — BTS SIO SLAM 2025</p>
+  <p class="intro">Les hyperviseurs (Proxmox VE, VMware ESXi, KVM) sont devenus des cibles prioritaires pour les attaquants : compromettre l'hyperviseur, c'est prendre le contrôle de toutes les VMs hébergées en un seul coup.</p>
+  <hr>
+  <p class="item"><strong>VM Escape :</strong> faille permettant à une VM de s'échapper vers l'hôte — CVE-2023-20867 (VMware Tools) exploitée in the wild en 2023.</p>
+  <p class="item"><strong>Proxmox &amp; attaque API :</strong> l'API REST sans MFA est vecteur d'intrusion — +12 000 instances exposées sur Shodan en 2024.</p>
+  <p class="item"><strong>Ransomware ESXiArgs :</strong> chiffrement massif de serveurs ESXi via CVE-2021-21974, exploitée 2 ans après le patch.</p>
+  <p class="item"><strong>Bonnes pratiques :</strong> VLAN management isolé, accès VPN uniquement, MFA sur interface web, snapshots chiffrés, mises à jour immédiates.</p>
+  <p class="conclusion">Dans un contexte de virtualisation massive, sécuriser la couche hyperviseur est aussi critique que le périmètre réseau. Une bonne hygiène de configuration suffit à éliminer la majorité des vecteurs documentés.</p>
+  <p class="sources">Sources : ANSSI · CVE Mitre · Proxmox Security Blog · Shodan · Rapid7 AttackerKB</p>
+</div>

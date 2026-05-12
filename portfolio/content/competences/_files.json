@@ -1,0 +1,6 @@
+[
+  { "name": "Langages",        "ext": "txt", "file": "langages.html" },
+  { "name": "Systèmes & Infra","ext": "txt", "file": "systemes.html" },
+  { "name": "Outils",          "ext": "txt", "file": "outils.html" },
+  { "name": "Réseaux",         "ext": "txt", "file": "reseaux.html" }
+]

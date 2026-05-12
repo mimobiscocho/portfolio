@@ -1,0 +1,19 @@
+/* TEAM */
+
+Mixtape: Toasty Digital
+Twitter: @jonsantoast
+Location: Minneapolis, USA
+
+Website: Antoine Guillou
+Site: https://antoineguillou.fr
+Twitter: @starfennec
+Location: Paris, France
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Components: jQuery
+Software: Atom, Gulp
+
+CRT Effect : https://github.com/hut8
+Funny Dancing Lizard : https://twitter.com/ka92

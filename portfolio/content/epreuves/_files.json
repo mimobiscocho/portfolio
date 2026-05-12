@@ -1,0 +1,8 @@
+[
+  { "name": "E1 — Culture générale",  "ext": "txt", "file": "e1.html" },
+  { "name": "E2 — Anglais",           "ext": "txt", "file": "e2.html" },
+  { "name": "E3 — CEJM",              "ext": "txt", "file": "e3.html" },
+  { "name": "E4 — Support IT",        "ext": "txt", "file": "e4.html" },
+  { "name": "E5 — Développement",     "ext": "txt", "file": "e5.html" },
+  { "name": "E6 — Cybersécurité",     "ext": "txt", "file": "e6.html" }
+]

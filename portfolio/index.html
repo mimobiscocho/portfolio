@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>nassim | Portfolio BTS SIO SLAM</title>
+  <meta content="Portfolio de nassim Sebah - Étudiant BTS SIO option SLAM à l'EFREI Paris." name="description"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="fixes.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="site.webmanifest" rel="manifest"/>
+  <meta content="#000000" name="theme-color"/>
+  <meta content="true" name="HandheldFriendly"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="no" name="msapplication-tap-highlight"/>
+  <meta content="no" name="apple-mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <link href="humans.txt" rel="author" type="text/plain"/>
+ </head>
+ <body>
+  <div class="screen">
+   <div class="bios"></div>
+
+   <!-- Barre de menu macOS -->
+   <div class="navbar">
+    <div class="left">
+     <div class="item submenu">
+      <button class="logo"></button>
+      <ul class="drop">
+       <li><a class="ga-ce" data-action="click" data-category="elements" data-label="about" href="index.html" id="about">À propos de SEBAH OS</a></li>
+       <li class="hide-on-ios"><a href="index.html" id="fullscreen">Plein écran</a></li>
+       <li><a href="index.html" id="restart">Redémarrer</a></li>
+       <li><a href="https://kanye2049.com/" id="inspiration du site">Inspiration du site</a></li>
+      </ul>
+     </div>
+     <div class="d-flex">
+      <div class="item submenu">
+       <button>Fichier</button>
+       <ul class="drop">
+        <li><a class="disabled" href="index.html">Nouveau</a></li>
+        <li><a class="disabled" href="index.html">Ouvrir</a></li>
+        <li>
+         <a class="switchfiles" href="index.html" id="switchfiles">
+          <span class="off ga-ce" data-action="click" data-category="elements" data-label="ShowHiddenFiles">Afficher fichiers cachés</span>
+          <span class="on">Cacher fichiers cachés</span>
+         </a>
+        </li>
+        <li><a class="share-popup ga-ce" data-action="click" data-category="outbound" data-label="linkedin" href="https://www.linkedin.com/in/nassim-sebah-019731295//" target="_blank">Partager (LinkedIn)</a></li>
+        <li><a class="share-popup ga-ce" data-action="click" data-category="outbound" data-label="github" href="https://github.com/mimobiscocho" target="_blank">Partager (GitHub)</a></li>
+       </ul>
+      </div>
+      <div class="item submenu">
+       <button>Édition</button>
+       <ul class="drop">
+        <li><a class="disabled" href="index.html">Annuler</a></li>
+        <li><a class="disabled" href="index.html">Copier</a></li>
+        <li><a class="disabled" href="index.html">Couper</a></li>
+        <li><a class="disabled" href="index.html">Coller</a></li>
+        <li><a href="index.html" id="print">Imprimer</a></li>
+       </ul>
+      </div>
+      <div class="item submenu">
+       <button>Liens</button>
+       <ul class="drop">
+        <li><a class="ga-ce" data-action="click" data-category="outbound" data-label="github" href="https://github.com/mimobiscocho" target="_blank">GitHub</a></li>
+        <li><a class="ga-ce" data-action="click" data-category="outbound" data-label="linkedin" href="https://www.linkedin.com/in/nassim-sebah-019731295//" target="_blank">LinkedIn</a></li>
+        <li><a class="ga-ce" data-action="click" data-category="outbound" data-label="email" href="mailto:nsebah16@gmail.com">Email</a></li>
+        <li><a class="ga-ce" data-action="click" data-category="outbound" data-label="elearning" href="" target="_blank">Site E-Learning</a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="right">
+     <div class="item">
+      <span class="my-0">nassim</span>
+     </div>
+     <div class="item">
+      <span class="time" id="time"></span>
+     </div>
+    </div>
+   </div>
+
+   <!-- Bureau — dossiers et fichiers -->
+   <button class="file folder folder1 ga-ce"
+           data-action="click" data-category="elements" data-label="formation"
+           data-open="folder" data-src="content/formation/" data-w="380" data-h="280"
+           id="folder1">
+    <span>FORMATION</span>
+   </button>
+
+   <button class="file folder folder2 ga-ce"
+           data-action="click" data-category="elements" data-label="epreuves"
+           data-open="folder" data-src="content/epreuves/" data-w="400" data-h="300"
+           id="folder2">
+    <span>ÉPREUVES</span>
+   </button>
+
+   <button class="file folder folder3 ga-ce"
+           data-action="click" data-category="elements" data-label="stages"
+           data-open="folder" data-src="content/stages/" data-w="380" data-h="280"
+           id="folder3">
+    <span>EXP. PRO</span>
+   </button>
+
+   <button class="file folder folder4 ga-ce"
+           data-action="click" data-category="elements" data-label="competences"
+           data-open="folder" data-src="content/competences/" data-w="380" data-h="260"
+           id="folder4">
+    <span>COMPÉTENCES</span>
+   </button>
+
+   <button class="file folder lizard ga-ce"
+           data-action="click" data-category="elements" data-label="projets"
+           data-open="folder" data-src="content/projets/" data-w="400" data-h="300"
+           id="lizard">
+    <span>PROJETS</span>
+   </button>
+
+   <button class="file text earthtxt ga-ce"
+           data-action="click" data-category="elements" data-label="contact"
+           data-open="file" data-src="content/contact.html" data-w="320" data-h="240"
+           id="earththt">
+    <span><em>CONTACT</em><wbr/>.txt</span>
+   </button>
+
+   <button class="file text ga-ce"
+           data-action="click" data-category="elements" data-label="veille"
+           data-open="file" data-src="content/veille.html" data-w="500" data-h="380"
+           id="readme">
+    <span><em>veille</em><wbr/>.txt</span>
+   </button>
+
+   <button class="file folder ga-ce"
+           data-action="click" data-category="elements" data-label="documents"
+           data-open="folder" data-src="content/documents/" data-w="660" data-h="340"
+           id="docs-icon">
+    <span>DOCUMENTS</span>
+   </button>
+
+   <button class="file text ga-ce"
+           data-action="click" data-category="elements" data-label="lisezmoi"
+           data-open="file" data-src="content/lisezmoi.html" data-w="300" data-h="260"
+           id="lisezmoi">
+    <span><em>LISEZMOI</em><wbr/>.txt</span>
+   </button>
+
+   <div class="dialog"></div>
+  </div>
+
+  <div class="video-container">
+   <video class="video" id="video" loop muted playsinline>
+    <source class="webm" src="" type="video/webm"/>
+    <source class="mpeg" src="" type="video/mp4"/>
+   </video>
+  </div>
+
+  <img alt="" class="print-visual" src="img/CV – Nassim SEBAH.pdf"/>
+
+  <script src="js/jquery/jquery-3.4.1.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/windows.js"></script>
+  <script src="js/drag.js"></script>
+
+  <script>
+   $(document).ready(function () {
+     // À propos de SEBAH OS
+     $("#about").off("click").on("click", function (e) {
+       e.preventDefault();
+       $(".navbar .item.submenu.active").removeClass("active");
+       var content =
+         '<div style="padding:0.75rem; min-width:280px; font-size:0.85rem; line-height:1.85;">' +
+         '<p style="font-weight:bold; letter-spacing:0.08em; margin-bottom:0.15rem; font-size:0.95rem;">SEBAH OS v1.0</p>' +
+         '<p style="opacity:0.45; font-size:0.75rem; margin-bottom:0.9rem;">Portfolio interactif — nassim SEBAH</p>' +
+         '<p>Processeur : NASTEK NPU-7 Phantom @ 3.14GHz</p>' +
+         '<p>Mémoire&nbsp;&nbsp;&nbsp;: 32 Go VOIDMEM DDR5 6400 MHz</p>' +
+         '<p>Stockage&nbsp;&nbsp;: PHANTOM VT-1TB Gen5 NVMe</p>' +
+         '<p>Système&nbsp;&nbsp;&nbsp;: SEBAH OS 1.0 · Kernel 6.x</p>' +
+         '<hr style="border:none;border-top:1px solid rgba(0,0,0,0.12);margin:0.6rem 0;"/>' +
+         '<p style="font-size:0.78rem; opacity:0.6;">Développé en HTML / CSS / JS · Thème iMac G3 rétro</p>' +
+         '<p style="font-size:0.78rem; opacity:0.45; margin-top:0.25rem;">EFREI Paris · BTS SIO SLAM · 2024–2026</p>' +
+         '</div>';
+       $(".dialog").html(content).css("display", "flex");
+     });
+
+   });
+  </script>
+ </body>
+</html>

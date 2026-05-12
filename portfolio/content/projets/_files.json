@@ -1,0 +1,7 @@
+[
+  { "name": "Wake on WAN V2",      "ext": "txt", "file": "wake-on-wan.html" },
+  { "name": "Médiathèque SIO",     "ext": "txt", "file": "mediatheque-sio.html" },
+  { "name": "Free-Steam-Games",    "ext": "txt", "file": "free-steam-games.html" },
+  { "name": "Proxmox Home Lab",    "ext": "txt", "file": "proxmox-lab.html" },
+  { "name": "Pentest Lab",         "ext": "txt", "file": "pentest-lab.html" }
+]
