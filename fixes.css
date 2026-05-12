@@ -14,20 +14,6 @@ html {
   font-size: calc(16px * var(--text-scale));
 }
 
-/* Fix: FORMATION window – "2k49" starts with a digit, can't use .2k49 */
-[class~="2k49"] { left: 20px; top: 60px; width: 320px; height: 280px; }
-@media (min-width: 768px) { [class~="2k49"] { width: 420px; height: 300px; } }
-
-/* Fix: STAGES window */
-.finder.blondafolder { left: 35px; top: 65px; width: 320px; height: 300px; }
-@media (min-width: 768px) { .finder.blondafolder { width: 400px; height: 320px; } }
-
-/* Fix: PROJETS window body overflow */
-.finder.fdl .body { overflow-y: auto !important; }
-
-/* Fix: veille.txt button */
-#readme { position: absolute; right: 20px; top: 260px; }
-
 /* Police principale */
 body, button, input {
   font-family: 'Share Tech Mono', monospace !important;
@@ -98,16 +84,16 @@ body, button, input {
 }
 
 /* Positions des icônes — deux colonnes à gauche */
-.folder1  { left:  22px !important; top:  40px !important; }
-.folder2  { left: 145px !important; top:  40px !important; }
-.folder3  { left:  22px !important; top: 140px !important; }
-.earthtxt { left: 145px !important; top: 140px !important; }
-.lizard   { left:  22px !important; top: 240px !important; }
-.folder4  { left: 145px !important; top: 240px !important; }
-#readme    { position: absolute !important; left:  22px; top: 340px; }
-#docs-icon { position: absolute !important; left: 145px; top: 340px; }
-#lisezmoi  { position: absolute !important; left:  22px; top: 440px; }
-.hd-icon  { position: absolute !important; right: 22px; top: 40px; }
+.icon-formation   { left:  22px !important; top:  40px !important; }
+.icon-epreuves    { left: 145px !important; top:  40px !important; }
+.icon-stages      { left:  22px !important; top: 140px !important; }
+.icon-contact     { left: 145px !important; top: 140px !important; }
+.icon-projets     { left:  22px !important; top: 240px !important; }
+.icon-competences { left: 145px !important; top: 240px !important; }
+#icon-veille      { position: absolute !important; left:  22px; top: 340px; }
+#icon-documents   { position: absolute !important; left: 145px; top: 340px; }
+#icon-lisezmoi    { position: absolute !important; left:  22px; top: 440px; }
+.icon-hd          { position: absolute !important; right: 22px; top: 40px; }
 
 /* Icône Corbeille */
 .file.trash { padding-top: 40px !important; }

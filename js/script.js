@@ -128,7 +128,7 @@
             $(".login").addClass("loaded");
             //$('.login input[type="password"]').focus();
             self.setLoading(false);
-            setTimeout(function () { $("#lisezmoi").trigger("click"); }, 300);
+            setTimeout(function () { $("#icon-lisezmoi").trigger("click"); }, 300);
           }, 1500);
 
           if (ambientSound && !self.isIPhone) {
@@ -594,56 +594,6 @@
     $("body").toggleClass("show-hidden-files");
   });
 
-  $("#folder1").on("click", function (e) {
-    e.preventDefault();
-    $(".finder").removeClass("focus");
-    $(".finder.2k49").addClass("focus").show("slow");
-    $(this).addClass("active");
-  });
-
-  $("#folder2").on("click", function (e) {
-    e.preventDefault();
-    $(".finder").removeClass("focus");
-    $(".finder.gktfolder").addClass("focus").show("slow");
-    $(this).addClass("active");
-  });
-
-  $("#folder3").on("click", function (e) {
-    e.preventDefault();
-    $(".finder").removeClass("focus");
-    $(".finder.blondafolder").addClass("focus").show("slow");
-    $(this).addClass("active");
-  });
-
-  $("#folder4").on("click", function (e) {
-    e.preventDefault();
-    $(".finder").removeClass("focus");
-    $(this).addClass("active");
-    setTimeout(function () {
-      var content =
-        "<div><p>File corrupted!<br />Please download it again.</p></div>";
-      $(".dialog").html(content).css("display", "flex");
-    }, 0);
-    $(this).addClass("active");
-  });
-
-  $("#lizard").on("click", function (e) {
-    e.preventDefault();
-    $("#video2").get(0).play();
-    $(".finder.fdl").addClass("focus").show();
-  });
-
-  $("#readme").on("click", function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    $(".finder.readme").addClass("focus").show("slow");
-  });
-
-  $("#earththt").on("click", function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    $(".finder.earth").addClass("focus").show("slow");
-  });
 
   $(".finder .close").on("click", function (e) {
     e.preventDefault();
