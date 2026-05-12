@@ -84,16 +84,16 @@ body, button, input {
 }
 
 /* Positions des icônes — deux colonnes à gauche */
-.icon-formation   { left:  22px !important; top:  40px !important; }
-.icon-epreuves    { left: 145px !important; top:  40px !important; }
-.icon-stages      { left:  22px !important; top: 140px !important; }
-.icon-contact     { left: 145px !important; top: 140px !important; }
-.icon-projets     { left:  22px !important; top: 240px !important; }
-.icon-competences { left: 145px !important; top: 240px !important; }
+.icon-formation   { position: absolute !important; left:  22px; top:  40px; }
+.icon-epreuves    { position: absolute !important; left: 145px; top:  40px; }
+.icon-stages      { position: absolute !important; left:  22px; top: 140px; }
+.icon-contact     { position: absolute !important; left: 145px; top: 140px; }
+.icon-projets     { position: absolute !important; left:  22px; top: 240px; }
+.icon-competences { position: absolute !important; left: 145px; top: 240px; }
 #icon-veille      { position: absolute !important; left:  22px; top: 340px; }
 #icon-documents   { position: absolute !important; left: 145px; top: 340px; }
 #icon-lisezmoi    { position: absolute !important; left:  22px; top: 440px; }
-.icon-hd          { position: absolute !important; right: 22px; top: 40px; }
+.icon-hd          { position: absolute !important; right: 22px; top:  40px; }
 
 /* Icône Corbeille */
 .file.trash { padding-top: 40px !important; }
@@ -157,9 +157,11 @@ body, button, input {
    Listing de fichiers dans une fenêtre finder
    ================================================================ */
 .finder-filelist {
-  padding: 0.25rem 0;
+  padding: 0.5rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-content: flex-start;
 }
 
 /* Réinitialise le positionnement absolu des icônes bureau */
@@ -170,22 +172,7 @@ body, button, input {
   top: auto !important;
   bottom: auto !important;
   z-index: auto !important;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.6rem;
-  padding: 0.3rem 0.75rem;
-  border-radius: 0;
-  text-align: left;
-}
-.finder-filelist .file:hover { background: #000; color: #fff; }
-.finder-filelist .file:hover:before { filter: invert(1); }
-.finder-filelist .file span { font-size: calc(15px * var(--text-scale)); }
-.finder-filelist .file:before {
-  position: relative !important;
-  left: auto !important;
-  transform: none !important;
+  width: 90px;
   flex-shrink: 0;
 }
 
